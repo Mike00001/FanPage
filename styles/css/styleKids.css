@@ -1,0 +1,551 @@
+@charset "UTF-8";
+/*font*/
+/*colors*/
+/*----------------------------------------------------*/
+/*font*/
+/*----------------------------------------------------*/
+@font-face {
+  font-family: 'tintin_majuscules__bold';
+  src: url("..//..//fonts/webfontkit-tintin/tintin-webfont.eot");
+  src: url("..//..//fonts/webfontkit-tintin/tintin-webfont.eot?#iefix") format("embedded-opentype"), url("..//..//fonts/webfontkit-tintin/tintin-webfont.woff2") format("woff2"), url("..//..//fonts/webfontkit-tintin/tintin-webfont.woff") format("woff"), url("..//..//fonts/webfontkit-tintin/tintin-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/*----------------------------------------------------*/
+/*DEBUT HEADER*/
+/*----------------------------------------------------*/
+body {
+  font-family: "Montserrat", sans-serif; }
+
+header {
+  margin-bottom: 10%; }
+  header .navbar-light .navbar-nav .nav-link {
+    color: #e1621c !important;
+    font-size: 1.1rem; }
+    header .navbar-light .navbar-nav .nav-link:hover {
+      color: #fbad4c !important; }
+  header h1 {
+    font-family: 'tintin_majuscules__bold';
+    text-transform: uppercase;
+    z-index: 3 !important;
+    align-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  header .jumbotron {
+    position: relative;
+    padding-top: 0;
+    background-color: transparent !important; }
+    header .jumbotron img {
+      width: 100%;
+      height: 730px;
+      z-index: 2 !important; }
+
+/*----------------------------------------------------*/
+/*PRESENTATION*/
+/*----------------------------------------------------*/
+#presentation {
+  padding-top: 5%;
+  margin-bottom: 10%; }
+  #presentation .container .nav-pills .nav-link.active, #presentation .container .nav-pills .show > .nav-link {
+    color: #fbad4c;
+    background-color: transparent; }
+    #presentation .container .nav-pills .nav-link.active:focus, #presentation .container .nav-pills .show > .nav-link:focus {
+      outline: 3px solid #fbad4c; }
+  #presentation .container #pills-tab {
+    justify-content: center; }
+    #presentation .container #pills-tab a {
+      color: #027673;
+      font-weight: bold; }
+      #presentation .container #pills-tab a:hover {
+        color: #6ba998; }
+  #presentation .container #presentationBtn {
+    display: inline-flex;
+    justify-content: center; }
+  #presentation .container #nav-tabContent {
+    display: flex;
+    justify-content: center; }
+  #presentation .container .tab-content {
+    display: flex;
+    width: 100%; }
+    #presentation .container .tab-content .tab-pane {
+      column-count: 3;
+      text-align: justify;
+      text-align-last: justify; }
+
+/*----------------------------------------------------*/
+/*ADAPTATIONS*/
+/*----------------------------------------------------*/
+#adaptations {
+  margin-bottom: 10%;
+  padding-top: 5%;
+  /*IMAGE OVERLAY*/
+  border: none; }
+  #adaptations .btn {
+    color: #6ba998;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; }
+    #adaptations .btn:hover, #adaptations .btn .btn.focus, #adaptations .btn:focus {
+      text-decoration: none !important;
+      color: #fbad4c; }
+  #adaptations .card-container {
+    position: relative;
+    width: 50%; }
+  #adaptations .image {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  #adaptations .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity=50);
+    transition: .5s ease;
+    background-color: #000; }
+  #adaptations .card {
+    border: none; }
+  #adaptations .card:hover .overlay {
+    opacity: .7; }
+  #adaptations .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; }
+  #adaptations .card-body, #adaptations .card-footer {
+    font-family: "Montserrat", sans-serif; }
+  #adaptations .card-img-top-anim {
+    height: 17rem; }
+  #adaptations .card-img-top-films {
+    height: 25rem;
+    width: 20rem; }
+  #adaptations .card-img-top-series {
+    height: 17rem; }
+  #adaptations .card-img-top-game {
+    height: 15rem; }
+  #adaptations .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid lighter #fbad4c, 50%; }
+  #adaptations .card-footer {
+    height: 5rem; }
+
+/*----------------------------------------------------*/
+/*LIGHTBOX*/
+/*----------------------------------------------------*/
+#lightBox {
+  padding-top: 5%; }
+  #lightBox #row {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-bottom: 2%; }
+
+/*----------------------------------------------------*/
+/*SHOP*/
+/*----------------------------------------------------*/
+#eShop {
+  height: 2401px;
+  padding-top: 5%;
+  margin-bottom: 20% !important; }
+  #eShop a {
+    border: 0 none;
+    outline: 0;
+    text-decoration: none; }
+  #eShop strong {
+    font-weight: bold; }
+  #eShop p {
+    margin: 0.75rem 0 0; }
+  #eShop h1 {
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0; }
+  #eShop input,
+  #eShop button {
+    border: 0 none;
+    outline: 0 none; }
+  #eShop button {
+    background-color: #fbad4c;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold; }
+  #eShop button:hover,
+  #eShop button:focus {
+    background-color: #e1621c;
+    cursor: pointer; }
+  #eShop img,
+  #eShop .basket-module,
+  #eShop .basket-labels,
+  #eShop .basket-product {
+    width: 100%; }
+  #eShop input,
+  #eShop button,
+  #eShop .basket,
+  #eShop .basket-module,
+  #eShop .basket-labels,
+  #eShop .item,
+  #eShop .price,
+  #eShop .quantity,
+  #eShop .subtotal,
+  #eShop .basket-product,
+  #eShop .product-image,
+  #eShop .product-details {
+    float: left; }
+  #eShop .price:before,
+  #eShop .subtotal:before,
+  #eShop .subtotal-value:before,
+  #eShop .total-value:before,
+  #eShop .promo-value:before {
+    content: '€'; }
+  #eShop .hide {
+    display: none; }
+  #eShop main {
+    clear: both;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1rem 0;
+    width: 960px; }
+  #eShop .basket,
+  #eShop aside {
+    padding: 0 1rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #eShop .basket {
+    width: 70%; }
+  #eShop .basket-module {
+    color: #111; }
+    #eShop .basket-module button {
+      background-color: #e1621c; }
+      #eShop .basket-module button:hover {
+        background-color: #fbad4c; }
+  #eShop label {
+    display: block;
+    margin-bottom: 0.3125rem; }
+  #eShop .promo-code-field {
+    border: 1px solid #ccc;
+    color: #027673;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    width: 48%;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  #eShop .promo-code-field:hover,
+  #eShop .promo-code-field:focus {
+    border: 1px solid #fbad4c; }
+  #eShop .promo-code-cta {
+    border-radius: 4px;
+    font-size: 0.625rem;
+    margin-left: 0.625rem;
+    padding: 0.6875rem 1.25rem 0.625rem; }
+  #eShop .basket-labels {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 1.625rem; }
+  #eShop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  #eShop li {
+    color: #111;
+    display: inline-block;
+    padding: 0.625rem 0; }
+  #eShop li.price:before,
+  #eShop li.subtotal:before {
+    content: ''; }
+  #eShop .item {
+    width: 55%; }
+  #eShop .price,
+  #eShop .quantity,
+  #eShop .subtotal {
+    width: 15%; }
+  #eShop .subtotal {
+    text-align: right; }
+  #eShop .remove {
+    bottom: 1.125rem;
+    float: right;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 45%; }
+  #eShop .remove button {
+    background-color: transparent;
+    color: #777;
+    float: none;
+    text-decoration: underline;
+    text-transform: uppercase; }
+  #eShop .item-heading {
+    padding-left: 4.375rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #eShop .basket-product {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+    position: relative; }
+  #eShop .product-image {
+    width: 35%; }
+  #eShop .product-details {
+    width: 65%; }
+  #eShop .product-frame {
+    border: 1px solid #aaa; }
+  #eShop .product-details {
+    padding: 0 1.5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #eShop .quantity-field {
+    background-color: #F2F1F0;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    font-size: 0.625rem;
+    padding: 2px;
+    width: 3.75rem; }
+  #eShop aside {
+    float: right;
+    position: relative;
+    width: 30%; }
+  #eShop .summary {
+    position: fixed;
+    top: 25%;
+    background-color: none !important;
+    border: 2px solid #e1621c;
+    padding: 1rem;
+    width: 250px;
+    margin-left: 10rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #eShop .summary-total-items {
+    color: #666;
+    font-size: 0.875rem;
+    text-align: center; }
+  #eShop .summary-subtotal,
+  #eShop .summary-total {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    margin: 1rem 0;
+    overflow: hidden;
+    padding: 0.5rem 0; }
+  #eShop .subtotal-title,
+  #eShop .subtotal-value,
+  #eShop .total-title,
+  #eShop .total-value,
+  #eShop .promo-title,
+  #eShop .promo-value {
+    color: #111;
+    float: left;
+    width: 50%; }
+  #eShop .summary-promo {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+  #eShop .promo-title {
+    float: left;
+    width: 70%; }
+  #eShop .promo-value {
+    color: #8B0000;
+    float: left;
+    text-align: right;
+    width: 30%; }
+  #eShop .summary-delivery {
+    padding-bottom: 3rem; }
+  #eShop .subtotal-value,
+  #eShop .total-value {
+    text-align: right; }
+  #eShop .total-title {
+    font-weight: bold;
+    text-transform: uppercase; }
+  #eShop .summary-checkout {
+    display: block; }
+  #eShop .checkout-cta {
+    display: block;
+    float: none;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.625rem 0;
+    width: 100%; }
+  #eShop .summary-delivery-selection {
+    background-color: #F2F1F0;
+    border: none;
+    border-radius: 0;
+    display: block;
+    font-size: 0.625rem;
+    height: 34px;
+    width: 100%; }
+  @media screen and (max-width: 640px) {
+    #eShop aside,
+    #eShop .basket,
+    #eShop .summary,
+    #eShop .item,
+    #eShop .remove {
+      width: 100%; }
+    #eShop .basket-labels {
+      display: none; }
+    #eShop .basket-module {
+      margin-bottom: 1rem; }
+    #eShop .item {
+      margin-bottom: 1rem; }
+    #eShop .product-image {
+      width: 40%; }
+    #eShop .product-details {
+      width: 60%; }
+    #eShop .price,
+    #eShop .subtotal {
+      width: 33%; }
+    #eShop .quantity {
+      text-align: center;
+      width: 34%; }
+    #eShop .quantity-field {
+      float: none; }
+    #eShop .remove {
+      bottom: 0;
+      text-align: left;
+      margin-top: 0.75rem;
+      position: relative; }
+    #eShop .remove button {
+      padding: 0; }
+    #eShop .summary {
+      margin-top: 1.25rem;
+      position: relative; } }
+  @media screen and (min-width: 641px) and (max-width: 960px) {
+    #eShop aside {
+      padding: 0 1rem 0 0; }
+    #eShop .summary {
+      width: 28%; } }
+  @media screen and (max-width: 960px) {
+    #eShop main {
+      width: 100%; }
+    #eShop .product-details {
+      padding: 0 1rem; } }
+
+/*----------------------------------------------------*/
+/*FORM*/
+/*----------------------------------------------------*/
+#contact {
+  padding-bottom: 5em; }
+  #contact h5 {
+    color: #6c757d;
+    margin-bottom: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 4rem; }
+  #contact .form-group-left, #contact .form-group-right {
+    line-height: 1.125rem;
+    margin-bottom: 2rem; }
+  #contact .form-group-left {
+    padding-right: 4rem; }
+  #contact .form-group-right {
+    padding-left: 4rem; }
+  #contact input {
+    border: none;
+    border-raduis: 0;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    color: #027673;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: .8rem; }
+    #contact input input:active {
+      outline: none; }
+  #contact .form-control {
+    border-bottom: 1px solid #e1621c !important;
+    border-radius: 0; }
+  #contact button {
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 5%;
+    color: #fff;
+    background-color: #e1621c;
+    padding: .5em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    border: none; }
+
+/*----------------------------------------------------*/
+/*FOOTER*/
+/*----------------------------------------------------*/
+footer {
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: #027673;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold; }
+  footer div {
+    padding: 2em;
+    color: #fbad4c; }
+    footer div ul {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end; }
+      footer div ul li {
+        list-style-type: none;
+        padding: .5em; }
+        footer div ul li .fa {
+          color: #fbad4c; }
+
+#btnTop {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-image: url("../img/fanpage/tintinToTop");
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */ }
+
+#myBtn:hover {
+  opacity: .3;
+  /* Add a dark-grey background on hover */ }
+
+/*# sourceMappingURL=styleKids.css.map */
